@@ -9,7 +9,9 @@ In case there is no player with a given ID, it will be an HTTP 404 error.
 
 There are also some unit tests to check parsing players from text.
 
+
 Some ideas about improvements:
+
 Store data about players in the database (like PostgreSQL for example). We could have a special parser which parses CSV and stores parsed data in the database (or maybe several parsers for different sources of input data). It will allow extending an API - add ability to add new players or modify existing, add search abilities - for example select players by country of birth or year of birth, etc.
 
 When data is stored in the database, we will need in-memory cache to improve performance.
